@@ -75,11 +75,35 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'app_db',
+#         'USER': 'app_user',
+#         'PASSWORD': 'secret_password',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#         # 'ENGINE': 'django.db.backends.sqlite3',
+#         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         # 'ENGINE': 'django.db.backends.postgresql',
+#         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         # 'NAME': 'djangogirls',
+#         # 'USER': 'postgres',
+#         # 'PASSWORD': 'root',
+#         # 'HOST': 'localhost',
+#         # 'PORT': '5432',
+#     }
+# }
+# pip install psycopg2-binary==2.8.6
+# admin: root, root 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'djangogirls',
+        'USER': 'postgres',
+        'PASSWORD': 'root',
+        'HOST': 'localhost'
+     }
 }
 
 
@@ -107,7 +131,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/New_York'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
