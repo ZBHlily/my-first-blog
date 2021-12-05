@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Books
+from .models import Post, Book
 ## included the post model defined in models.py
 admin.site.register(Post) ## makes it visble on admin 
-admin.site.register(Books)
+admin.site.register(Book)

@@ -95,6 +95,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 #     }
 # }
 # pip install psycopg2-binary==2.8.6
+# pip install psycopg2-binary ****works too
+# pip freeze > requirements.txt
 # admin: root, root 
 DATABASES = {
     'default': {

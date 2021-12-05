@@ -26,7 +26,7 @@ class Post(models.Model): ## defines our model: obj
     def __str__(self):
         return self.title
 
-class Books(models.Model): ## defines our model: obj
+class Book(models.Model): ## defines our model: obj
     ## class is a special keyword that indicates we define an obj 
     ## post is name of model
     ## () Post is a Django model so Django knows how it can be saved in db 
