@@ -12,6 +12,8 @@ router.register(r'book', BookViewSet)
 urlpatterns = [
    path('', include(router.urls)),
    #to run it we do post_list
-   path('post_list', views.post_list, name='post_list')
+   path('post_list', views.post_list, name='post_list'),
    #path('post_list', views.post_list, name='book_list')
+   path('post_detail/<int:pk>/', views.post_detail, name='post_detail')
 ]
+
